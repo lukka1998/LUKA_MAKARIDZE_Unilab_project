@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 .bg-image{
     background-image: url(Unilab_img/image\ 1.png);
@@ -78,7 +79,9 @@
   }
 
   .card-section {
-    width: 22%;
+    width: 23%;
+    display: flex;
+    flex-wrap: wrap;
     
   }
   #cardContainer{
@@ -101,9 +104,12 @@
   }
   
   .card {
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 5px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
    
   }
   
@@ -115,6 +121,14 @@
   .felx-d{
     display: flex;
     flex-direction: column;
+  }
+  .video{
+    width:92%;
+    margin: 50px;
+  }
+  .video_tag{
+    width: 100%;
+    margin-top: 20px;
   }
 
 
@@ -138,4 +152,19 @@
     .header{
         padding: 0px 50px;
     }
+    
+    .card-section{
+        width: 46%;
+    }
+    .video{
+        width: 85%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+   .card-section{
+    width: 70%;
+   }
+   .video{
+    width: 75%;
+   }
   }

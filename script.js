@@ -26,24 +26,26 @@ window.addEventListener('scroll', function() {
   });
   var cardsData = {
     card1: {
-      title: "Card Title 1",
-      about: "This is a brief description about the first card.",
-      imgAddress: "https://via.placeholder.com/200/FF0000"
+      title: "Book Flight",
+      about: "book memorable journey with our flight booking services! we're thrilled to present you flight options to suit your travel needs.",
+      imgAddress: "Unilab_img/image 2 (1).png"
     },
     card2: {
-      title: "Card Title 2",
-      about: "This is a brief description about the second card.",
-      imgAddress: "https://via.placeholder.com/200/00FF00"
+      title: "Book Hotels",
+      about: "book memorable journey with our flight booking services! we're thrilled to present you flight options to suit your travel needs.",
+      imgAddress: "Unilab_img/image 2 (2).png"
     },
     card3: {
-      title: "Card Title 3",
-      about: "This is a brief description about the third card.",
-      imgAddress: "https://via.placeholder.com/200/0000FF"
+      title: "Book Cruises",
+      about: "book memorable journey with our flight booking services! we're thrilled to present you flight options to suit your travel needs..",
+      imgAddress: "Unilab_img/image 2 (3).png"
     },
     card4: {
-      title: "Card Title 4",
-      about: "This is a brief description about the fourth card.",
-      imgAddress: "https://via.placeholder.com/200/FFFF00"
+        imgAddress: "Unilab_img/image 2.png",
+      about: "book memorable journey with our flight booking services! we're thrilled to present you flight options to suit your travel needs.",
+      title: "Book family Vacation",
+      
+            
     }
   };
   
@@ -54,19 +56,22 @@ window.addEventListener('scroll', function() {
   
     var title = document.createElement('h2');
     title.textContent = cardInfo.title;
+    title.style.color="#424244"
   
     var about = document.createElement('p');
     about.textContent = cardInfo.about;
+    about.style.color="#424244"
   
     var img = document.createElement('img');
     img.src = cardInfo.imgAddress;
     img.alt = cardInfo.title;
+
     
   
-    
+    card.appendChild(img);
     card.appendChild(title);
     card.appendChild(about);
-    card.appendChild(img);
+    
   
     return card;
   }
@@ -78,7 +83,7 @@ window.addEventListener('scroll', function() {
   let h1 = document.createElement("h1");
    h1.textContent = "Discover Our Services";
   let p = document.createElement("p");
-  p.style.width="800px"
+//   p.style.width="800px"
   p.textContent = "ExploreEra provides a one-stop solution for individuals seeking well-planned journeys.  These services include expert advice on destination selection, flight and accommodation bookings, and customized itineraries to individual preferences.";
   cardContainer0.appendChild(h1);
     cardContainer0.appendChild(p);
