@@ -174,8 +174,76 @@
   gap: 5px;
 }
 .blogs img{
+  width: 95%;
+}
+section{
+  margin-top: 20px;
+}
+.dropbtn {
+  width: 100%;
+  padding: 10px 25px;
+  border: none;
+  
+  width: 90%;
+  background-color: white;
+
+}
+.div_dropdown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+  height: 50vh;
+  background-color: #E0E0E0;
+}
+
+.dropdown {
+ float: left;
+  position: relative;
+  display: inline-block;
+  display: flex;
+  justify-content: space-around;
   width: 100%;
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+.btn_book{
+  width: 96%;
+  text-align:center;
+  font-weight: bold;
+  padding: 10px 25px;
+}
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+ 
+}
+
 
 
 
@@ -203,6 +271,9 @@
     .video{
         width: 85%;
     }
+    .div_dropdown{
+      height: 60vh;
+    }
   }
   @media only screen and (max-width: 768px) {
    .card-section{
@@ -217,5 +288,8 @@
    }
    .contnet_div1{
     width: 80%;
+   }
+   .div_dropdown{
+    height: 65vh;
    }
   }
