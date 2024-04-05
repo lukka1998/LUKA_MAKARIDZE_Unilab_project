@@ -23,6 +23,13 @@
     width: 100%;
     z-index: 20;
     transition: background-color 0.3s ease;
+
+}
+.sign-up-page{
+ background-color:#EAE9E9;
+}
+.sing-links .a_tag  , .sign-up-page a {
+  color: #424244;
 }
 .nav-links{
     display: flex;
@@ -181,9 +188,9 @@ section{
 }
 .dropbtn {
   width: 100%;
-  padding: 10px 25px;
+  padding: 12px 25px;
   border: none;
-  
+  border-radius: 10px;
   width: 90%;
   background-color: white;
 
@@ -200,7 +207,6 @@ section{
 }
 
 .dropdown {
- float: left;
   position: relative;
   display: inline-block;
   display: flex;
@@ -243,14 +249,140 @@ section{
   width: 100%;
  
 }
+.color{
+  color: #424244;
+}
+footer{
+  background-color: #EAE9E9;
+  margin-top: 35px;
+  padding: 60px 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .nav-links{
+  flex-direction: column;
+  gap: 0;
+  justify-content: flex-start;
+  gap: 3px;
+
+  align-items: flex-start;
+}
+footer .nav-links a:hover{
+  color: #424244;
+}
+.fot-div1{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+
+  
+}
+.icon{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  gap: 25px;
+  padding: 3px;
+
+}
+.icon i{
+  transform: scale(1.5);
+}
+.input{
+  position: relative;
+  width:214px;
+}
+.input img{
+
+  position: absolute;
+  right:0;
+  top: 4px;
+  text-align: center;
+  cursor: pointer;
+
+}
+.input input{
+  border: 1px solid gray;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.div-sec1{
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+}
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  width: 100%;
+  background-color: #f8f5f5;
+  
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  height: 500px;
+  width: 30%;
+  border-radius: 10px;
+  padding: 20px 30px;
+  gap: 20px;
+  
+}
+.label{
+  display: flex;
+  flex-direction: column;
+}
+.label input{
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #FF6700;
+}
+.btn-Continue{
+  padding: 10px 15px;
+}
+.hr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hr hr{
+  
+  color: black;
+  width: 33%;
+  margin-top: 5px;
+}
+.form-icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.form-icons img{
+  transform: scale(0.6);
+}
+.form-p{
+  text-align: center;
+ 
+}
+.form-p span a {
+  color: #FF6700;
+  text-decoration: none;
+}
 
 
 
-
-
-
-
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width:1024px) {
     body {
       font-size: 16px;
     }
@@ -274,8 +406,38 @@ section{
     .div_dropdown{
       height: 60vh;
     }
+    footer p, h5,h4 , li {
+      width: 200px;
+     }
+     .header li{
+      width: 20px !important;
+     }
+     footer{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+      justify-content: center;
+      padding: 20px;
+     }
+     .div-sec1{
+      width: 100%;
+     }
+     .extraclass{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      padding: 20px 80px;
+     }
+     .form{
+      width: 50%;
+     }
+     .h2{
+      width: 100%;
+     }
+
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 568px) {
    .card-section{
     width: 70%;
    }
@@ -290,6 +452,39 @@ section{
     width: 80%;
    }
    .div_dropdown{
-    height: 65vh;
+    height: 80vh;
    }
+   footer{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+   }
+   .div-sec1{
+    flex-direction: column;
+   }
+   .nav-links{
+    padding: 0;
+   }
+   .extraclass{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    justify-content: space-between;
+    padding:0;
+   }
+   form{
+    height: 140vh;
+   }
+   .form{
+    width: 90%;
+   }
+   .form-icons{
+    justify-content: center;
+   }
+   .hr hr{
+    width: 20%;
+   }
+
   }
