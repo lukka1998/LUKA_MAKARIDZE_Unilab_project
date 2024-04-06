@@ -15,20 +15,41 @@
     <body>
     <div class="bg-image">
         <header class="header ">
-            <a  href="#" class="a_tag logo ">ExploreEra</a>
+            <a  href="#" class="a_tag logo ">ExploreEra</a> 
             <div class="header_div">
-                <ul class="nav-links">
+                <ul class="nav-links ">
                     <li><a class="a_tag" href="#">Home</a></li>
                     <li><a class="a_tag"href="#">About Us</a></li>
                     <li><a class="a_tag" href="#">Blog</a></li>
-                    <li><a class="a_tag" href="#">Our services</a></li>
+                    <li><a class="a_tag" href="service.html">Our services</a></li>
                     <li><a class="a_tag" href="#">Our offers</a></li>
-                    <li><a class="a_tag" href="#"> <i class="fa-solid fa-user  iconuser a_tag"></i></a></li>
-                    
+                    <div class="dropdown dropdown2">
+                      <li><a class="a_tag" href="#"> <i onclick="myFunction1()" class="fa-solid fa-user  iconuser a_tag dropbtn1 dropbtn"></i></a></li>
+                      <div id="myDropdown1" class="dropdown-content">
+                        <a href="sing.html">sign in</a>
+                        <a href="sign-up.html">Sign up</a>
+                        <a href="#">sign out</a>
+                      </div>
+                    </div>
                   </ul>
-    
             </div>
-            <li class="resp_icon"><a class="a_tag" href="#"> <i class="fa-solid fa-bars  iconuser a_tag"></i></a></li>
+            <div class="dropdown dropdown2 dropdown3">
+              <li class="resp_icon"><a class="a_tag" href="#"> <i onclick="myFunction2()" class="fa-solid fa-bars  iconuser a_tag dropbtn dropbtn1"></i></a></li>
+              <div id="myDropdown2" class="dropdown-content">
+                <a href="sing.html">sign in</a>
+                <a href="sign-up.html">Sign up</a>
+                <hr>
+                <a href="index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Blog</a>
+                <a href="service.html">Our services</a>
+                <a href="#">Our offers</a>
+
+
+                
+              </div>
+            </div>
+            
 
         </header>
         <div class="center-content">
@@ -189,11 +210,10 @@
         <h1 class="ml-1">Ready To Book A Trip?</h1>
         <div class="center">
           <div class="dropdown">
-            
             <button onclick="myFunction()" class="dropbtn " >Your starting location</button>
             <div id="myDropdown" class="dropdown-content">
-              <a href="#home">Paris</a>
-              <a href="#about">France</a>
+              <a href="#">Paris</a>
+              <a href="#">France</a>
               <a href="#contact">Italy</a>
             </div>
           </div>

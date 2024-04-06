@@ -83,7 +83,7 @@ window.addEventListener('scroll', function() {
   let h1 = document.createElement("h1");
    h1.textContent = "Discover Our Services";
   let p = document.createElement("p");
-//   p.style.width="800px"
+//   p.stle.width="800px"y
   p.textContent = "ExploreEra provides a one-stop solution for individuals seeking well-planned journeys.  These services include expert advice on destination selection, flight and accommodation bookings, and customized itineraries to individual preferences.";
   cardContainer0.appendChild(h1);
     cardContainer0.appendChild(p);
@@ -100,6 +100,12 @@ window.addEventListener('scroll', function() {
   function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
+  function myFunction1() {
+    document.getElementById("myDropdown1").classList.toggle("show");
+  }
+  function  myFunction2(){
+    document.getElementById("myDropdown2").classList.toggle("show");
+  }
   
   // Close the dropdown if the user clicks outside of it
   window.onclick = function(event) {
@@ -114,3 +120,5 @@ window.addEventListener('scroll', function() {
       }
     }
   }
+ 
+  
