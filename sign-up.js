@@ -42,3 +42,34 @@ function myFunction() {
         
       })
   }
+  let searchbtn=document.querySelector(".btn-search");
+  searchbtn.addEventListener("click",function(){
+    let btnfilter=document.querySelector(".btn-Filter")
+    let service=document.querySelector(".service-img");
+    if (service.style.display === 'none' || service.style.display === '') {
+      service.style.display = 'flex';
+      // btnfilter.style.display="block"
+    } else {
+      service.style.display = 'none';
+      // btnfilter.style.display="none"
+
+    }
+    
+  })
+  let btnfilter=document.querySelector(".btn-Filter")
+  btnfilter.addEventListener("click" ,function(){
+    let left=document.querySelector(".left")
+    let rigth=document.querySelector(".right")
+    if (left.style.display === 'none' || left.style.display === '') {
+      left.style.display = 'flex';
+      rigth.style.display="none"
+      left.style.width="100%"
+    } else {
+      left.style.display = 'none';
+      rigth.style.display="flex"
+
+    }
+    
+  })
+ 
+  
