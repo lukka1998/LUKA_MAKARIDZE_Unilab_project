@@ -39,7 +39,7 @@
  background-color:#EAE9E9;
 }
 .dropdown li a i {
-  color: white;
+  color: #424244;
 }
 .sing-links .a_tag  , .sign-up-page a {
   color: #424244;
@@ -639,6 +639,8 @@ transform: scale(0.6);
 }
 .flex-top{
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .contnet_div img, .contnet_div1 img {
   width: 250px;
@@ -740,6 +742,9 @@ transform: scale(0.6);
       display: none;
       
      }
+     .left1 {
+      width: 400%;
+     }
      .right{
       width: 100%;
       gap: 20px;
@@ -747,23 +752,56 @@ transform: scale(0.6);
      .top{
       flex-direction: column;
      }
-     .top1_2 p{
+     .top1_2 p ,.top1_1 h6 ,.top1_1 p , .top1_2 h5  {
       flex-direction: row;
       font-size: 10px;
      }
      .flex-top{
       display: flex;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+     
+      
+     }
+     .flex-top div {
+      margin-top: -20px;
+      width: 300px;
+      margin-left: -100px;
+     }
+     .flex-top h5 {
+      margin-left: -80px;
+      margin-top: -10px;
+     }
+     .right1{
+      width: 100%;
+      padding: 5px;
+      margin: 0;
+     }
+     .right-card{
+      width: 60%;
+     }
+     .left-card{
+      width: 40%;
      }
      .top1_2{
       flex-direction: column;
       align-items: flex-start;
-      width: 200px;
+      width: 45%;
      }
+     .top1_2 p ,h5{
+      font-size: 10px;
+     }
+
      .top1_2 img{
       /* transform: scale(0.2); */
       width: 15px;
+     
      }
+     .top1_1 img{
+      width: 50%;
+     }
+     
      
 
 
