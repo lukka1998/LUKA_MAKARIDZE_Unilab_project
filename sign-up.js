@@ -46,11 +46,26 @@ function myFunction() {
   searchbtn.addEventListener("click",function(){
     let btnfilter=document.querySelector(".btn-Filter")
     let service=document.querySelector(".service-img");
-    if (service.style.display === 'none' || service.style.display === '') {
+    let carouselr=document.querySelector(".carousel-inner");
+    let carusel=document.querySelector(".carousel");
+    let ml=document.querySelector(".ml-1");
+
+      if (service.style.display === 'none' || service.style.display === '') {
       service.style.display = 'flex';
+      carouselr.style.display="none"
+      ml.style.display="none"
+      carusel.style.display="none"
+
+
       // btnfilter.style.display="block"
     } else {
       service.style.display = 'none';
+      carouselr.style.display="flex"
+      ml.style.display="block"
+      carusel.style.display="block"
+
+
+
       // btnfilter.style.display="none"
 
     }
@@ -60,7 +75,7 @@ function myFunction() {
   btnfilter.addEventListener("click" ,function(){
     let left=document.querySelector(".left")
     let rigth=document.querySelector(".right")
-    if (left.style.display === 'none' || left.style.display === '') {
+    if (left.style.display == 'none' || left.style.display == '') {
       left.style.display = 'flex';
       rigth.style.display="none"
       left.style.width="100%"

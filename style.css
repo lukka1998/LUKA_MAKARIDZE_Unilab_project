@@ -12,6 +12,12 @@
     height: 90vh;
     
 }
+.header_div{
+ margin-top: 10px;
+}
+.body-color{
+  background-color: #F4F4F4;
+}
 .header , .header1{
     display: flex;
     justify-content: space-between;
@@ -22,6 +28,7 @@
     position: fixed;
     width: 100%;
     z-index: 20;
+    
     transition: background-color 0.3s ease;
 
 }
@@ -376,6 +383,7 @@ form{
   
 }
 .form-width{
+  margin-top: 70px;
  height: 800px;
 }
 .label{
@@ -401,6 +409,7 @@ form{
   width: 33%;
   margin-top: 5px;
 }
+
 .form-icons{
   display: flex;
   justify-content: space-between;
@@ -473,7 +482,7 @@ form{
   
 }
 .service{
-  padding: 140px;
+  padding: 100px;
   width: 100%;
   height: 100%;
 }
@@ -522,6 +531,14 @@ form{
   margin-left: 32px;
   
 }
+.input-checkbox{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.getcolor{
+  color: #C85100;
+}
 .service-img{
   
   display: flex;
@@ -530,9 +547,7 @@ form{
   width: 100%;
   padding: 20px;
   display: none;
-  
-  
-
+  gap: 20px;
 }
 .service-img img{
   cursor: pointer;
@@ -542,12 +557,77 @@ form{
   flex-direction: column;
   gap: 20px;
   width: 20%;
+  
+}
+.left1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 20%;
+  background-color: white;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 10px;
+}
+.left-card {
+  width: 30%;
+}
+.left-card img{
+  width: 100%;
+  height: 200px;
+}
+.right1{
+  display: flex;
+  gap: 20px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+.right-card{
+  display: flex;
+
+  width: 80%;
+  flex-direction: column;
+  
+  
 }
 .right{
   display: flex;
   flex-direction: column;
   width: 60%;
   gap: 17px;
+text-align: center;
+}
+.top{
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+}
+.top1_1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  
+
+}
+
+.top1_2 img {
+transform: scale(0.6);
+}
+.top1_2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+.btn-show{
+  padding: 10px 20px;
+  width: 90%;
 }
 .btn-Filter{
   padding: 10px 15px;
@@ -557,9 +637,21 @@ form{
   margin: auto;
   
 }
+.flex-top{
+  display: flex;
+}
+.contnet_div img, .contnet_div1 img {
+  width: 250px;
+  height: 300px;
+}
   @media only screen and (max-width:1024px) {
     body {
       font-size: 16px;
+    }
+    .contnet_div img, .contnet_div1 img{
+      width: 100%;
+      height: 200px;
+
     }
     .btn-Filter{
       display: block;
@@ -652,12 +744,37 @@ form{
       width: 100%;
       gap: 20px;
      }
+     .top{
+      flex-direction: column;
+     }
+     .top1_2 p{
+      flex-direction: row;
+      font-size: 10px;
+     }
+     .flex-top{
+      display: flex;
+      justify-content: center;
+     }
+     .top1_2{
+      flex-direction: column;
+      align-items: flex-start;
+      width: 200px;
+     }
+     .top1_2 img{
+      /* transform: scale(0.2); */
+      width: 15px;
+     }
+     
 
 
   }
   @media only screen and (max-width: 568px) {
    .card-section{
     width: 70%;
+   }
+   .contnet_div img, .contnet_div1 img{
+    width: 100%;
+
    }
    .video{
     width: 75%;
