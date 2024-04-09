@@ -1,3 +1,16 @@
+function showmore(){
+  let left=document.querySelector(".left")
+  if (left.style.display == 'none' || left.style.display == '') {
+    left.style.display = 'block';
+    
+  } else {
+    left.style.display = 'none';
+   
+  }
+}
+
+
+
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
@@ -86,5 +99,5 @@ function myFunction() {
     }
     
   })
- 
+  
   
